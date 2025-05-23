@@ -36,8 +36,11 @@ func ZooShow(animals []AnimalSecond) {
 		fmt.Println(animal.MakeSound())
 	}
 
-type ZooKeeper struct{}
+}
 
-func (z ZooKeeper) Feed(animal AnimalSecond) {
-	fmt.Printf("Смотритель зоопарка кормит %s. %s!", animal.GetName(), animal.MakeSound())
+type ZooKeeper struct {
+}
+
+func (z ZooKeeper) Feed(a AnimalSecond) {
+	fmt.Printf("Смотритель зоопарка кормит %s. %s!", a.GetName(), a.MakeSound())
 }
